@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page">
+
+<div class="app-shell">
+  <header class="header">
+    <div class="brand-wrap">
+      <span class="brand-icon" aria-hidden="true">🗒</span>
+      <h1>Sticky Notes</h1>
+    </div>
+
+    <div class="header-actions">
+      <button class="primary-btn" onclick="createNote()">New Note</button>
+      <button class="icon-btn" id="themeToggleBtn" onclick="toggleTheme()" aria-label="Toggle theme">☀</button>
+      <span class="user-pill" id="currentUserLabel">User</span>
+      <button class="icon-btn" onclick="logout()" aria-label="Logout">⇥</button>
+    </div>
+  </header>
+
+  <section class="toolbar" aria-label="Note tools">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search notes..."
+      oninput="searchNotes()"
+      aria-label="Search notes"
+    >
+
+    <select id="categoryFilter" onchange="searchNotes()" aria-label="Filter by category">
+      <option value="all">All Categories</option>
+      <option value="General">General</option>
+      <option value="Work">Work</option>
+      <option value="Personal">Personal</option>
+      <option value="Ideas">Ideas</option>
+      <option value="Study">Study</option>
+    </select>
+  </section>
+
+  <main id="notesContainer" aria-live="polite"></main>
+
+  <footer class="footer">
+    <p>Sticky Notes App - Your personal note-taking companion</p>
+  </footer>
+  </div>
+
+<script src="auth.js"></script>
+<script src="notes.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>
