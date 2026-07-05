@@ -1,0 +1,10 @@
+### Signup API Test
+
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+
+{
+  "username": "yash",
+  "email": "yash@gmail.com",
+  "password": "123456"
+}

@@ -195,6 +195,7 @@ a {
   box-shadow: 0 14px 26px rgba(24, 36, 56, 0.19);
   display: flex;
   flex-direction: column;
+  /* cursor: grab; */
   cursor: grab;
   transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
