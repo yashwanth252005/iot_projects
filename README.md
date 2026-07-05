@@ -29,15 +29,8 @@ Built using **HTML**, **CSS**, **JavaScript**, **Spring Boot**, **MongoDB Atlas*
 
 ## 📸 Preview
 
-> Add screenshots or a GIF here after uploading your project.
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/03351938-32fc-4802-8a6c-112691d4ddb4" />
 
-Example:
-
-```
-assets/login.png
-assets/dashboard.png
-assets/demo.gif
-```
 
 ---
 
